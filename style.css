@@ -40,3 +40,53 @@ nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     background-color: oklch(from var(--color-accent) 95% 5% h);
 }
+
+form {
+    font: inherit;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+
+}
+
+form input, form textarea {
+    font: inherit;
+}
+
+form label {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+    gap: 0.5em;
+}
+
+form button {
+    grid-column: 1 / -1;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 1em;
+}
+
+.projects h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 400%;
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
