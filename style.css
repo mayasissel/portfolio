@@ -41,6 +41,7 @@ nav a:hover {
     background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
+/* contact form */
 form {
     font: inherit;
     display: grid;
@@ -64,6 +65,7 @@ form button {
     grid-column: 1 / -1;
 }
 
+/* projects */
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -89,4 +91,39 @@ h1 {
 h2, h3, h4, h5, h6 {
     line-height: 1.1;
     text-wrap: balance;
+}
+
+ul {
+    padding-left: 1.2em;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+section {
+    margin-bottom: 2em;
+    padding-block: 1em;
+    border-bottom: 1px solid oklch(90% 3% 200);
+}
+
+.resume article {
+    margin-bottom: 1.5em;
+}
+
+.resume article h4 {
+  font-size: 1.25em;
+  margin-bottom: 0.25em;
+}
+
+.resume h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.resume ul {
+    margin-top: 0;
 }
