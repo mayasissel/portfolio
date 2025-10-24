@@ -4,18 +4,17 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// const navLinks = $$("nav a");
-
-// let currentLink = navLinks.find(
-//   (a) => a.host === location.host && a.pathname === location.pathname,
-// );
-
-// currentLink.classList.add('current');
-
-// if (currentLink) {
-//   // or if (currentLink !== undefined)
-//   currentLink.classList.add('current');
-// }
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+}
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
 
 let pages = [
   { url: '', title: 'Home' },
@@ -52,7 +51,7 @@ for (let p of pages) {
   // Open external links in new tab
   if (a.host !== location.host) {
   a.target = "_blank";
-  a.rel = "noopener noreferrer"; // (optional but recommended for security)
+  a.rel = "noopener noreferrer";
   }
 
   nav.append(a);
