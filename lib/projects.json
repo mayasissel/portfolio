@@ -1,21 +1,21 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "year": "2024",
+        "title": "Carbs and Ratings",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas accusamus, laudantium vitae recusandae accusantium iure sint ad vero maiores. Culpa vitae doloribus qui animi, totam quos quis nisi. Illum."
+        "description": "The project focuses on analyzing the relationship between the amount of carbohydrates in a recipe and the rating of the recipe."
     },
     {
-        "title": "Vero, numquam. Earum, ipsum.",
-        "year": "2024",
+        "title": "Expository Visualization of Food",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Voluptate minima modi cumque a laboriosam aliquam alias harum unde quaerat quam hic sapiente maiores inventore porro, corporis ea veniam fuga quas voluptatibus doloribus tempora! Neque accusamus illum eligendi iste!"
+        "description": "The project focuses on creating a graph to showcase a trend in processing levels in food bought at grocery stores."
     },
     {
-        "title": "Ab doloremque voluptate consequuntur!",
-        "year": "2024",
+        "title": "Persuasive/Deceptive Visualization of Populations",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Dolore blanditiis reiciendis, recusandae quos praesentium molestiae nihil commodi sint quibusdam excepturi explicabo non, sunt assumenda. Cumque quibusdam mollitia numquam, corporis assumenda enim, aspernatur ullam eveniet ea deserunt facere fugiat?"
+        "description": "This project focuses on creating a graph showcasing youth populations growth and decline."
     },
     {
         "title": "Neque deserunt asperiores excepturi?",
@@ -37,37 +37,37 @@
     },
     {
         "title": "Maxime voluptates dolorum omnis.",
-        "year": "2024",
+        "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Mollitia quidem quam ipsum necessitatibus enim sint ut, aliquam, vero illo perspiciatis adipisci eum assumenda, nam quos iure. Excepturi eos praesentium tempora, officiis voluptas provident cumque impedit sequi explicabo est!"
     },
     {
         "title": "Beatae ab eos tenetur.",
-        "year": "2024",
+        "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Itaque molestiae porro iste, eveniet alias obcaecati et tempore officia, debitis animi minima perspiciatis dolore doloribus veniam dolor, quam cupiditate corrupti omnis? Magnam incidunt possimus sapiente reiciendis, esse adipisci blanditiis."
     },
     {
         "title": "Odio veniam voluptatum nesciunt!",
-        "year": "2024",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Eveniet est, exercitationem velit fugiat perspiciatis labore, quasi voluptas a, minima tenetur impedit fuga! Mollitia molestiae, ipsam nostrum quaerat veniam placeat explicabo ducimus facilis, eveniet doloribus quam possimus, perspiciatis enim!"
     },
     {
         "title": "Placeat repudiandae soluta provident!",
-        "year": "2024",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Eius architecto delectus, debitis doloribus consequatur amet id fuga eos mollitia nisi explicabo excepturi vero at hic voluptatum ut rem veritatis pariatur nihil eaque ea. Molestiae aliquid nisi officia quis."
     },
     {
         "title": "Consequatur molestiae totam harum?",
-        "year": "2024",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Repellendus neque ex harum, incidunt, veritatis illo alias esse architecto ad sit praesentium. Similique explicabo enim magni. Eos et est asperiores voluptatem ea quidem, dignissimos, ipsum dolores illo earum eaque."
     },
     {
         "title": "Voluptas totam maiores laborum.",
-        "year": "2024",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Corporis aliquid, vitae et earum adipisci sequi fugiat? Magnam officiis dolore possimus. Fugiat, ipsam blanditiis neque nemo excepturi dicta officiis iure perferendis enim modi repudiandae. Dolores tempora repudiandae eum perspiciatis."
     }
