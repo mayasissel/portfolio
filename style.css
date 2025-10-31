@@ -160,3 +160,28 @@ select {
   grid-row: 2;
   margin: 0;
 }
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-year {
+  color: gray;
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  margin-top: 0.2em;
+  font-size: 0.9em;
+}
+
+.project-year::before {
+  content: "— ";
+  color: gray;
+}
+
+#projects-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
