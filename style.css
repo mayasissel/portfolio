@@ -179,8 +179,75 @@ select {
   color: gray;
 }
 
+/* === Pie Chart SVG === */
 #projects-plot {
-  max-width: 20em;
-  margin-block: 2em;
-  overflow: visible;
+    width: 100%;
+    max-width: 20em;
+    min-width: 8em;
+    margin-block: 2em;
+    flex: 1 1 12em;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+    overflow: visible;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* vertical centering */
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: nowrap; /* keep legend beside chart */
+  margin: 2em auto;
+  max-width: 900px;
+}
+
+.legend {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  gap: 0.5em 1em; /* row gap / column gap */
+  flex: 1;
+  max-width: 25em;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, 1fr); /* default 3 columns */
+}
+
+.legend-item {
+  display: flex;          /* keeps label and number on same line */
+  align-items: center;
+  gap: 0.5em;
+  white-space: nowrap;    /* prevents line break between label and value */
+}
+
+.swatch {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 0.25em;
+}
+
+/* Medium screen: 2 columns */
+@media (max-width: 700px) {
+  .legend {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screen: 1 column */
+@media (max-width: 450px) {
+  .legend {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Italic for value */
+.legend-item em {
+  font-style: italic;
+  color: #555;
 }
