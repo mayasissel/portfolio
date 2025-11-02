@@ -85,10 +85,34 @@ let searchInput = document.querySelector('.searchBar');
 searchInput.addEventListener('input', (event) => {
   query = event.target.value;
   
-  let filteredProjects = projects.filter((project) => {
-  let values = Object.values(project).join(' ').toLowerCase();
-  return values.includes(query.toLowerCase());
-  });
+  // let filteredProjects = projects.filter((project) => {
+  // let values = Object.values(project).join(' ').toLowerCase();
+  // return values.includes(query.toLowerCase());
+  // });
+
+  
+
+  let filteredProjects = projects;
+
+  // Apply pie slice filter if any
+  if (selectedIndex !== -1) {
+    let rolledData = d3.rollups(
+      projects,
+      v => v.length,
+      d => d.year
+    );
+    let dataArr = rolledData.map(([year, count]) => ({ value: count, label: year }));
+    let selectedYear = dataArr[selectedIndex].label;
+    filteredProjects = filteredProjects.filter(p => p.year === selectedYear);
+  }
+
+    // Apply search query filter
+    if (query) {
+        filteredProjects = filteredProjects.filter((project) => {
+            let values = Object.values(project).join(' ').toLowerCase();
+            return values.includes(query.toLowerCase());
+        });
+    }
   
   projectsTitle.textContent = `${filteredProjects.length} Projects`;
   renderProjects(filteredProjects, projectsContainer, 'h2');
