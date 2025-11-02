@@ -49,10 +49,10 @@ function renderPieChart(projectsGiven) {
         .selectAll('li')
         .attr('class', (_, idx) => idx === selectedIndex ? 'selected' : '');
         
-      let filteredProjects = projects;
+      let filteredProjects = projectsGiven;
 
       if (query) {
-        filteredProjects = projectsGiven.filter((project) => {
+        filteredProjects = filteredProjects.filter((project) => {
             let values = Object.values(project).join(' ').toLowerCase();
             return values.includes(query.toLowerCase());
         });
@@ -90,6 +90,7 @@ searchInput.addEventListener('input', (event) => {
   return values.includes(query.toLowerCase());
   });
   
+  projectsTitle.textContent = `${filteredProjects.length} Projects`;
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
