@@ -102,6 +102,16 @@ function renderScatterPlot(data, commits) {
   // Put all the JS code of Steps inside this function
   const width = 1000;
   const height = 600;
+  const margin = { top: 10, right: 10, bottom: 30, left: 20 };
+
+  const usableArea = {
+    top: margin.top,
+    right: width - margin.right,
+    bottom: height - margin.bottom,
+    left: margin.left,
+    width: width - margin.left - margin.right,
+    height: height - margin.top - margin.bottom,
+  };
 
   const svg = d3
     .select('#chart')
@@ -117,6 +127,10 @@ function renderScatterPlot(data, commits) {
 
   const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
 
+  // Update scales with new ranges
+  xScale.range([usableArea.left, usableArea.right]);
+  yScale.range([usableArea.bottom, usableArea.top]);
+
   const dots = svg.append('g').attr('class', 'dots');
 
   dots
@@ -126,10 +140,95 @@ function renderScatterPlot(data, commits) {
     .attr('cx', (d) => xScale(d.datetime))
     .attr('cy', (d) => yScale(d.hourFrac))
     .attr('r', 5)
-    .attr('fill', 'steelblue');
+    .style('fill-opacity', 0.7)
+    .attr('fill', 'steelblue')
+    .on('mouseenter', (event, commit) => {
+      renderTooltipContent(commit);
+      updateTooltipVisibility(true);
+      updateTooltipPosition(event);
+    })
+    .on('mouseleave', () => updateTooltipVisibility(false));
+
+
+  // Add gridlines BEFORE the axes
+  const gridlines = svg
+    .append('g')
+    .attr('class', 'gridlines')
+    .attr('transform', `translate(${usableArea.left}, 0)`);
+
+  const yTicks = yScale.ticks();
+
+  // Create gridlines as an axis with no labels and full-width ticks
+  gridlines
+  .selectAll('line')
+  .data(yTicks)
+  .join('line')
+  .attr('x1', 0)
+  .attr('x2', usableArea.width)
+  .attr('y1', (d) => yScale(d))
+  .attr('y2', (d) => yScale(d))
+  .attr('stroke-width', 1)
+  .attr('stroke', (d) => {
+    // Map 0–24h to color
+    const t = Math.sin((d / 24) * Math.PI);
+    return d3.interpolateRgb('steelblue', 'orange')(t);
+  });
+
+  // Create the axes
+  const xAxis = d3.axisBottom(xScale);
+  const yAxis = d3
+    .axisLeft(yScale)
+    .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
+
+  // Add X axis
+  svg
+    .append('g')
+    .attr('transform', `translate(0, ${usableArea.bottom})`)
+    .call(xAxis);
+
+  // Add Y axis
+  svg
+    .append('g')
+    .attr('transform', `translate(${usableArea.left}, 0)`)
+    .call(yAxis);
+}
+
+function renderTooltipContent(commit) {
+  const link = document.getElementById('commit-link');
+  const date = document.getElementById('commit-date');
+  const time = document.getElementById('commit-time');
+  const author = document.getElementById('commit-author');
+  const lines = document.getElementById('commit-lines');
+
+  if (!commit || Object.keys(commit).length === 0) return;
+
+  link.href = commit.url;
+  link.textContent = commit.id;
+  date.textContent = commit.datetime?.toLocaleDateString('en', {
+    dateStyle: 'full',
+  });
+  time.textContent = commit.datetime?.toLocaleTimeString('en', {
+    hour: '2-digit',
+    minute: '2-digit',
+  });
+  author.textContent = commit.author || 'Unknown';
+  lines.textContent = commit.totalLines ?? 'N/A';
+}
+
+function updateTooltipVisibility(isVisible) {
+  const tooltip = document.getElementById('commit-tooltip');
+  tooltip.hidden = !isVisible;
+}
+
+function updateTooltipPosition(event) {
+  const tooltip = document.getElementById('commit-tooltip');
+  tooltip.style.left = `${event.clientX + 10}px`; // slight offset
+  tooltip.style.top = `${event.clientY + 10}px`;
 }
 
 let data = await loadData();
 let commits = processCommits(data);
 
 renderCommitInfo(data, commits);
+
+renderScatterPlot(data, commits);
