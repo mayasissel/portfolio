@@ -336,23 +336,28 @@ dl.info {
   column-gap: 0.5em;
   row-gap: 0.25em;
   margin: 0;
-  padding: 0.5em 0.75em;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  padding: 0.65em 0.9em;
+  border-radius: 8px;
   font-size: 0.9em;
-  transition-duration: 500ms;
-  transition-property: opacity, visibility;
+  transition-duration: 400ms;
+  transition-property: opacity, visibility, transform;
   pointer-events: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transform: translateY(0);
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: black
 }
 
 dl.info dt {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 dl.info[hidden]:not(:hover, :focus-within) {
   opacity: 0;
   visibility: hidden;
+  transform: translateY(4px);
 }
 
 .tooltip {
