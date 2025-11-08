@@ -307,26 +307,32 @@ path {
 
 #stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-
-  border: 1px solid #ccc;
+  grid-template-columns: auto auto;
+  column-gap: 1.5rem;
+  row-gap: 0.25rem;
+  max-width: 350px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  background: #fafafa;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 1rem;
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
 }
 
 #stats dt {
-  grid-row: 1;
-  font-weight: bold;
-  margin: 0;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 #stats dd {
-  grid-row: 2;
   margin: 0;
-  color: #111;
+  text-align: right;
+  color: #555;
 }
 
 dl.info {
@@ -387,4 +393,44 @@ circle:hover {
 
 circle.selected {
   fill: #ff6b6b;
+}
+
+/* Selection count text */
+#selection-count {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* Definition list styling */
+#language-breakdown {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1.5rem;
+  row-gap: 0.25rem;
+  max-width: 300px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Term (language name) */
+#language-breakdown dt {
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Definition (count + percent) */
+#language-breakdown dd {
+  margin: 0;
+  text-align: right;
+  color: #555;
 }

@@ -73,7 +73,7 @@ function renderCommitInfo(data, commits) {
 
   // Average line length (in characters)
   const avgLineLength = d3.mean(data, (d) => d.length);
-  dl.append('dt').html('Average Line Length (in characters):');
+  dl.append('dt').html('Average Line Length (in chars):');
   dl.append('dd').text(avgLineLength.toFixed(2));
 
   // Time of day with most work
@@ -98,13 +98,8 @@ dl.append('dt').html('Most Active Time of Day:');
 dl.append('dd').text(maxPeriod ? maxPeriod[0] : 'N/A');
 }
 
-// let xScale = d3
-//     .scaleTime()
-//     .domain(d3.extent(commits, (d) => d.datetime))
-//     .range([0, width])
-//     .nice();
-
-// let yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
+let xScale;
+let yScale;
 
 function renderScatterPlot(data, commits) {
   // Put all the JS code of Steps inside this function
@@ -121,6 +116,14 @@ function renderScatterPlot(data, commits) {
     width: width - margin.left - margin.right,
     height: height - margin.top - margin.bottom,
   };
+
+  xScale = d3
+  .scaleTime()
+  .domain(d3.extent(commits, (d) => d.datetime))
+  .nice();
+
+  yScale = d3.scaleLinear().domain([0, 24]);
+
 
   const svg = d3
     .select('#chart')
