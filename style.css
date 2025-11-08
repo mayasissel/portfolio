@@ -313,7 +313,6 @@ path {
   font-family: system-ui, sans-serif;
   font-size: 0.95rem;
   line-height: 1.5;
-  background: #fafafa;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem 1.25rem;
@@ -323,7 +322,6 @@ path {
 
 #stats dt {
   font-weight: 600;
-  color: #333;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -331,7 +329,6 @@ path {
 #stats dd {
   margin: 0;
   text-align: right;
-  color: #555;
 }
 
 dl.info {
@@ -412,7 +409,6 @@ circle.selected {
   font-family: system-ui, sans-serif;
   font-size: 0.95rem;
   line-height: 1.4;
-  background: #fafafa;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem 1.25rem;
@@ -422,7 +418,6 @@ circle.selected {
 /* Term (language name) */
 #language-breakdown dt {
   font-weight: 600;
-  color: #333;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -431,5 +426,4 @@ circle.selected {
 #language-breakdown dd {
   margin: 0;
   text-align: right;
-  color: #555;
 }
