@@ -3,72 +3,84 @@
         "title": "Carbs and Ratings",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "The project focuses on analyzing the relationship between the amount of carbohydrates in a recipe and the rating of the recipe."
+        "description": "The project focuses on analyzing the relationship between the amount of carbohydrates in a recipe and the rating of the recipe.",
+        "url": "https://mayasissel.github.io/Carbs-And-Ratings/"
     },
     {
         "title": "Expository Visualization of Food",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "The project focuses on creating a graph to showcase a trend in processing levels in food bought at grocery stores."
+        "description": "The project focuses on creating a graph to showcase a trend in processing levels in food bought at grocery stores.",
+        "url": ""
     },
     {
         "title": "Persuasive and Deceptive Visualization of Populations",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "This project focuses on creating a graph showcasing youth populations growth and decline."
+        "description": "This project focuses on creating a graph showcasing youth populations growth and decline.",
+        "url": "https://hasaam303.github.io/Deceptive_Visualization/"
     },
     {
-        "title": "Neque deserunt asperiores excepturi?",
-        "year": "2024",
+        "title": "Bikewatching",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sapiente dolorum ipsum aspernatur esse quis in minima architecto repellat, nobis sit facere eius ratione rerum dolore excepturi odit exercitationem repellendus voluptatem unde omnis vitae dolorem velit. Optio, quos dicta."
+        "description": "Sapiente dolorum ipsum aspernatur esse quis in minima architecto repellat, nobis sit facere eius ratione rerum dolore excepturi odit exercitationem repellendus voluptatem unde omnis vitae dolorem velit. Optio, quos dicta.",
+        "url": "https://mayasissel.github.io/bikewatch/"
     },
     {
-        "title": "Nam aperiam eaque necessitatibus.",
-        "year": "2024",
+        "title": "Water Vapor Visualizations",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Accusamus a nobis eius, modi, sed voluptatibus reprehenderit similique, vero ex esse vitae aut ea dolorem beatae. Natus dicta pariatur optio praesentium iure. Quam voluptatibus tenetur placeat sed quos. Illo."
+        "description": "Accusamus a nobis eius, modi, sed voluptatibus reprehenderit similique, vero ex esse vitae aut ea dolorem beatae. Natus dicta pariatur optio praesentium iure. Quam voluptatibus tenetur placeat sed quos. Illo.",
+        "url": "https://keanuventura.github.io/GOESWaterVaporVisualization/"
     },
     {
         "title": "Perspiciatis rerum exercitationem at.",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sed ex repudiandae vero repellendus ipsum recusandae perferendis maxime possimus nihil, harum doloremque molestiae doloribus aperiam ad ut cumque, ea veritatis. Quam consequuntur explicabo natus ut eaque deleniti ipsa consequatur."
+        "description": "Sed ex repudiandae vero repellendus ipsum recusandae perferendis maxime possimus nihil, harum doloremque molestiae doloribus aperiam ad ut cumque, ea veritatis. Quam consequuntur explicabo natus ut eaque deleniti ipsa consequatur.",
+        "url": ""
     },
     {
         "title": "Maxime voluptates dolorum omnis.",
-        "year": "2023",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Mollitia quidem quam ipsum necessitatibus enim sint ut, aliquam, vero illo perspiciatis adipisci eum assumenda, nam quos iure. Excepturi eos praesentium tempora, officiis voluptas provident cumque impedit sequi explicabo est!"
+        "description": "Mollitia quidem quam ipsum necessitatibus enim sint ut, aliquam, vero illo perspiciatis adipisci eum assumenda, nam quos iure. Excepturi eos praesentium tempora, officiis voluptas provident cumque impedit sequi explicabo est!",
+        "url": ""
     },
     {
         "title": "Beatae ab eos tenetur.",
-        "year": "2023",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Itaque molestiae porro iste, eveniet alias obcaecati et tempore officia, debitis animi minima perspiciatis dolore doloribus veniam dolor, quam cupiditate corrupti omnis? Magnam incidunt possimus sapiente reiciendis, esse adipisci blanditiis."
+        "description": "Itaque molestiae porro iste, eveniet alias obcaecati et tempore officia, debitis animi minima perspiciatis dolore doloribus veniam dolor, quam cupiditate corrupti omnis? Magnam incidunt possimus sapiente reiciendis, esse adipisci blanditiis.",
+        "url": ""
     },
     {
         "title": "Odio veniam voluptatum nesciunt!",
-        "year": "2022",
+        "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eveniet est, exercitationem velit fugiat perspiciatis labore, quasi voluptas a, minima tenetur impedit fuga! Mollitia molestiae, ipsam nostrum quaerat veniam placeat explicabo ducimus facilis, eveniet doloribus quam possimus, perspiciatis enim!"
+        "description": "Eveniet est, exercitationem velit fugiat perspiciatis labore, quasi voluptas a, minima tenetur impedit fuga! Mollitia molestiae, ipsam nostrum quaerat veniam placeat explicabo ducimus facilis, eveniet doloribus quam possimus, perspiciatis enim!",
+        "url": ""
     },
     {
         "title": "Placeat repudiandae soluta provident!",
-        "year": "2022",
+        "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eius architecto delectus, debitis doloribus consequatur amet id fuga eos mollitia nisi explicabo excepturi vero at hic voluptatum ut rem veritatis pariatur nihil eaque ea. Molestiae aliquid nisi officia quis."
+        "description": "Eius architecto delectus, debitis doloribus consequatur amet id fuga eos mollitia nisi explicabo excepturi vero at hic voluptatum ut rem veritatis pariatur nihil eaque ea. Molestiae aliquid nisi officia quis.",
+        "url": ""
     },
     {
         "title": "Consequatur molestiae totam harum?",
         "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Repellendus neque ex harum, incidunt, veritatis illo alias esse architecto ad sit praesentium. Similique explicabo enim magni. Eos et est asperiores voluptatem ea quidem, dignissimos, ipsum dolores illo earum eaque."
+        "description": "Repellendus neque ex harum, incidunt, veritatis illo alias esse architecto ad sit praesentium. Similique explicabo enim magni. Eos et est asperiores voluptatem ea quidem, dignissimos, ipsum dolores illo earum eaque.",
+        "url": ""
     },
     {
         "title": "Voluptas totam maiores laborum.",
         "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Corporis aliquid, vitae et earum adipisci sequi fugiat? Magnam officiis dolore possimus. Fugiat, ipsam blanditiis neque nemo excepturi dicta officiis iure perferendis enim modi repudiandae. Dolores tempora repudiandae eum perspiciatis."
+        "description": "Corporis aliquid, vitae et earum adipisci sequi fugiat? Magnam officiis dolore possimus. Fugiat, ipsam blanditiis neque nemo excepturi dicta officiis iure perferendis enim modi repudiandae. Dolores tempora repudiandae eum perspiciatis.",
+        "url": ""
     }
 ]
