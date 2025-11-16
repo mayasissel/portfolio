@@ -2,36 +2,41 @@
     {
         "title": "Carbs and Ratings",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "The project focuses on analyzing the relationship between the amount of carbohydrates in a recipe and the rating of the recipe.",
+        "image": "/images/carbsratings.png",
+        "description": "This project focuses on analyzing the relationship between the amount of carbohydrates in a recipe and the rating of the recipe.",
+        "site": "Carbs and Ratings",
         "url": "https://mayasissel.github.io/Carbs-And-Ratings/"
     },
     {
         "title": "Expository Visualization of Food",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "The project focuses on creating a graph to showcase a trend in processing levels in food bought at grocery stores.",
+        "image": "/images/foodproces.png",
+        "description": "This project focuses on creating a graph to showcase a trend in processing levels in food bought at grocery stores.",
+        "site": "",
         "url": ""
     },
     {
         "title": "Persuasive and Deceptive Visualization of Populations",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "/images/decep.png",
         "description": "This project focuses on creating a graph showcasing youth populations growth and decline.",
+        "site": "Deceptive Visualization",
         "url": "https://hasaam303.github.io/Deceptive_Visualization/"
     },
     {
         "title": "Bikewatching",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sapiente dolorum ipsum aspernatur esse quis in minima architecto repellat, nobis sit facere eius ratione rerum dolore excepturi odit exercitationem repellendus voluptatem unde omnis vitae dolorem velit. Optio, quos dicta.",
+        "image": "/images/bikewatch.png",
+        "description": "This project presents an interactive map visualization of bike traffic in and around Boston. It shows how bike traffic changes throughout the day.",
+        "site": "Bikewatch",
         "url": "https://mayasissel.github.io/bikewatch/"
     },
     {
         "title": "Water Vapor Visualizations",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Accusamus a nobis eius, modi, sed voluptatibus reprehenderit similique, vero ex esse vitae aut ea dolorem beatae. Natus dicta pariatur optio praesentium iure. Quam voluptatibus tenetur placeat sed quos. Illo.",
+        "image": "/images/watervapor.png",
+        "description": "This project focuses on how the mean brightness temperature of water vapor changes over the year of 2025.",
+        "site": "GOES Water Vapor Visualization",
         "url": "https://keanuventura.github.io/GOESWaterVaporVisualization/"
     },
     {
