@@ -369,6 +369,9 @@ dl.info[hidden]:not(:hover, :focus-within) {
 }
 
 circle {
+  @starting-style {
+    r: 0;
+  }
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
@@ -431,4 +434,28 @@ circle.selected {
 #language-breakdown dd {
   margin: 0;
   text-align: right;
+}
+
+#time-filter {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  max-width: 1000px;
+  margin-bottom: 1rem;
+}
+
+#time-filter label {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+#commit-progress {
+  flex: 1;
+  accent-color: initial;
+}
+
+#commit-time {
+  margin-left: auto;
 }
