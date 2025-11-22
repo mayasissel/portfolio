@@ -539,3 +539,7 @@ circle.selected {
 .step {
   padding-bottom: 0.5em;
 }
+
+#meta-body {
+  padding-bottom: 10em;
+}

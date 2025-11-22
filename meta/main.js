@@ -444,10 +444,10 @@ function onTimeSliderChange() {
   updateFileDisplay(filteredCommits);
 }
 
-document.getElementById("commit-progress")
-  .addEventListener("input", onTimeSliderChange);
+// document.getElementById("commit-progress")
+//   .addEventListener("input", onTimeSliderChange);
 
-onTimeSliderChange();
+// onTimeSliderChange();
 
 // scrollytelling starts
 import scrollama from 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm';
@@ -464,7 +464,7 @@ d3.select('#scatter-story')
       timeStyle: 'short',
     })},
 		I made <a href="${d.url}" target="_blank">${
-      i > 0 ? 'another glorious commit' : 'my first commit, and it was glorious'
+      i > 0 ? 'another commit' : 'my first commit, and it was great'
     }</a>.
 		I edited ${d.totalLines} lines across ${
       d3.rollups(
@@ -473,7 +473,7 @@ d3.select('#scatter-story')
         (d) => d.file,
       ).length
     } files.
-		Then I looked over all I had made, and I saw that it was very good.
+		Then I looked over all I had made, and I saw that it was good.
 	`,
   );
 
@@ -489,7 +489,7 @@ d3.select('#scatter-story')
       timeStyle: 'short',
     })},
 		I made <a href="${d.url}" target="_blank">${
-      i > 0 ? 'another glorious commit' : 'my first commit, and it was glorious'
+      i > 0 ? 'another commit' : 'my first commit, and it was great'
     }</a>.
 		I edited ${d.totalLines} lines across ${
       d3.rollups(
@@ -498,13 +498,11 @@ d3.select('#scatter-story')
         (d) => d.file,
       ).length
     } files.
-		Then I looked over all I had made, and I saw that it was very good.
+		Then I looked over all I had made, and I saw that it was good.
 	`,
   );
 
 function onStepEnter(response) {
-  console.log(response.element.__data__.datetime);
-
   const commit = response.element.__data__;
   const targetTime = commit.datetime;
 
@@ -514,8 +512,6 @@ function onStepEnter(response) {
 }
 
 function onStepEnter2(response) {
-  console.log(response.element.__data__.datetime)
-
   const commit = response.element.__data__;
   const targetTime = commit.datetime;
 
