@@ -2,7 +2,7 @@
     {
         "title": "Carbs and Ratings",
         "year": "2025",
-        "image": "/images/carbsratings.png",
+        "image": "../images/carbsratings.png",
         "description": "This project focuses on analyzing the relationship between the amount of carbohydrates in a recipe and the rating of the recipe.",
         "site": "Carbs and Ratings",
         "url": "https://mayasissel.github.io/Carbs-And-Ratings/"
